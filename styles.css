@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to right, #000000, #1e3c72);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    width: 400px; /* Lebar kolom */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input, button {
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Ukuran font lebih besar */
+}
+
+input {
+    width: calc(100% - 32px); /* Menghitung lebar input */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button {
+    background-color: #007BFF; /* Warna biru cerah */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Tombol memenuhi lebar kolom */
+    font-size: 1.2em; /* Ukuran font lebih besar */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+
+.result {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: left; /* Rata kiri untuk hasil */
+    max-height: 200px; /* Batas tinggi untuk hasil */
+    overflow-y: auto; /* Scroll jika hasil terlalu banyak */
+}
